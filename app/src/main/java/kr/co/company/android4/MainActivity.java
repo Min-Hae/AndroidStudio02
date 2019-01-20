@@ -1,3 +1,4 @@
+/////////// 서브액티비티로부터 문자열 반환받기////////////
 package kr.co.company.android4;
 
 import android.app.Activity;
@@ -21,7 +22,7 @@ public class MainActivity extends Activity {
         //버튼 클릭 이벤트 함수
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
-//인텐트로 메인액티비티와 서브액티비티를 연결
+                //인텐트로 메인액티비티와 서브액티비티를 연결
                 Intent in = new Intent(MainActivity.this, SubActivity.class);
                 startActivityForResult(in, GET_STRING);
             }
